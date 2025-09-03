@@ -1,0 +1,24 @@
+
+<div class="row m-3 ">
+    <div class="col-4 mt-4 " *ngFor="let artist of artists">
+        <div class="card">
+            <div class="content">
+
+                <img
+                class="card-img-top"
+                [src]="artist.photo"
+                alt="Card image cap"
+                />
+                <div class="card-body">
+                    <h2 class="card-title" appHighlight>{{artist.name}}</h2>
+                    <h4 class="card-title">{{artist.date}}</h4>
+                    <h6 class="card-text">{{artist.time}}</h6>
+                    <p class="card-text price">{{artist.price}}$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
