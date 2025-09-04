@@ -27,7 +27,10 @@ export class ShowComponent {
     //  this.artist$.map();
      
     
-    
+  }
+
+  add(id:Number){
+    this.artists.add(id);
   }
 
   

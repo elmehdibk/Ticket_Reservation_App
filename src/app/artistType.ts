@@ -5,4 +5,7 @@ export default class ArtistType {
     time!: String;
     photo!: String;
     price!: Number;
+    qt!:number;
+    total!:Number;
+    free!:boolean;
     }

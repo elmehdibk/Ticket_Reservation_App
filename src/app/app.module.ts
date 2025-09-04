@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { ShowComponent } from './show/show.component';
+import { TicketsComponent } from './tickets/tickets.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ShowComponent } from './show/show.component';
     HighlightDirective,
     LoginComponent,
     RegesterComponent,
-    ShowComponent,  
+    ShowComponent,
+    TicketsComponent,  
   ],
   imports: [
     BrowserModule,

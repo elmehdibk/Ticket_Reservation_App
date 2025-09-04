@@ -21,6 +21,7 @@
                                 name=""
                                 id=""
                                 class="btn btn-sm btn-outline-success"
+                            (click)="count(artist.id)"
                             >
                                 ADD YOUR TICKET
                                 <i class="fa fa-ticket"></i>
@@ -35,6 +36,17 @@
                             >
                                 SHOW
                                 <i class="fa fa-eye"></i>
+                            </button>
+
+                            <button
+                                type="button"
+                                name=""
+                                id=""
+                                class="btn btn-sm btn-outline-info"
+                                (click)="free(artist.id)"
+                            >
+                                FREE
+                                <i class="fa-solid fa-dollar-sign"></i>
                             </button>
                         </div>
                         

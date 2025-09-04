@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ArtistsService } from './artists.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',

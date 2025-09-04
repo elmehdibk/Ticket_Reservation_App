@@ -18,4 +18,13 @@ ngOnInit(){
     console.log(this.login);
   
 }
+counter:any=0;
+count(id:number){
+  this.counter=this.artist.counter.update(value=>value+=1);
+  // console.log(this.counter);
+  this.artist.add(id);
+}
+free(id:Number){
+  this.artist.isfree(id);
+}
 }

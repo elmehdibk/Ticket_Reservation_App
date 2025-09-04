@@ -1,0 +1,41 @@
+<!-- <div *ngFor="let ticket of tikets">
+    <p>{{ticket.name}}</p>
+</div> -->
+<div
+    class="table-responsive mt-4"
+>
+    <table
+        class="table table-success"
+    >
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">qt</th>
+                <th scope="col">price</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="" *ngFor="let ticket of tikets">
+                <td scope="row"><img [src]="ticket.photo" width="100px" alt="art picture"></td>
+                <td>{{ticket.name}}</td>
+                 <td>{{ticket.date}}</td>
+                <td>{{ticket.time}}</td>
+                <td>{{ticket.qt}}</td>
+
+                <td class="text text-success price">
+                    @if(ticket.free){
+                        FREE
+                    }
+                    @else{
+                        {{ticket.price}}$
+                    }
+                </td>
+                </tr>
+        </tbody>
+    </table> 
+</div>
