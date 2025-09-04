@@ -10,9 +10,12 @@ import { ArtistsService } from '../artists.service';
 export class ArtistsComponent {
 constructor(private artist:ArtistsService){}
 artists:any[]=[];
+login=false
 ngOnInit(){
   this.artists=this.artist.artists;
   // console.log(this.artist);
+   this.login=this.artist.isLogin();
+    console.log(this.login);
   
 }
 }

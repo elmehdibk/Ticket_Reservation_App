@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { computed, Injectable, signal, WritableSignal } from '@angular/core';
 
 
 @Injectable({
@@ -93,5 +93,6 @@ export class ArtistsService {
     price: 109.99
   }
 ]
-
+isLogin=signal(false);
+// login=computed(()=>{this.isLogin})
 }

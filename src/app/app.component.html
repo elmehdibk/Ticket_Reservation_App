@@ -1,5 +1,9 @@
-<!-- <app-nav></app-nav> -->
+
+
+    <app-nav *ngIf="artist.isLogin()"></app-nav>
+
+
 <!-- <app-artists></app-artists> -->
  <!-- <app-login></app-login> -->
-<!-- <app-footer></app-footer> -->
  <router-outlet></router-outlet>
+ <app-footer></app-footer>

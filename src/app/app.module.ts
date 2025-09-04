@@ -10,6 +10,9 @@ import { HighlightDirective } from './highlight.directive';
 import { LoginComponent } from './login/login.component';
 import { RegesterComponent } from './regester/regester.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { ShowComponent } from './show/show.component';
 
 
 @NgModule({
@@ -21,12 +24,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     HighlightDirective,
     LoginComponent,
     RegesterComponent,
-  
+    ShowComponent,  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
