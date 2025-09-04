@@ -1,4 +1,6 @@
-import { computed, Injectable, signal, WritableSignal } from '@angular/core';
+import { Injectable, signal} from '@angular/core';
+import ArtistType from './artistType';
+
 
 
 @Injectable({
@@ -10,8 +12,8 @@ export class ArtistsService {
    
     
   }
-
-  artists=[
+ myArtist:ArtistType|undefined;
+  artists:any[]=[
   {
     id: 1,
     name: "Taylor Swift",
@@ -93,6 +95,10 @@ export class ArtistsService {
     price: 109.99
   }
 ]
+
+getArtist(id:number){
+  return this.myArtist=this.artists.find(e=>e.id===id)
+}
 isLogin=signal(false);
 // login=computed(()=>{this.isLogin})
 }

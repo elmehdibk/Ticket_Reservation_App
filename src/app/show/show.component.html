@@ -1,1 +1,26 @@
-<p>show works!</p>
+<!-- <p>HELLO Artist {{artist$?.id}}</p> -->
+<section class="section mt-4">
+    <div class="img">
+        <img [src]="artist$?.photo" alt="artist picture">
+    </div>
+    <div class="infos">
+       <h1>Artisat: {{artist$?.name}}</h1>
+       <h3>date: {{artist$?.date}}</h3>
+       <h3>Time: {{artist$?.time}}</h3>
+       <h5>price:<strong class="text text-success">{{artist$?.price}}$</strong></h5> 
+        <div> 
+            <div class="d-grid gap-2">
+                <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-success"
+                >
+                ADD YOUR TICKET
+                                <i class="fa fa-ticket"></i>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</section>
